@@ -23,6 +23,7 @@ document.addEventListener('keypress', e => {
   if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex])
 })
 
+
 function playNote(key) {
   const noteAudio = document.getElementById(key.dataset.note)
   noteAudio.currentTime = 0
@@ -32,6 +33,11 @@ function playNote(key) {
     key.classList.remove('active')
   })
   document.addEventListener('keyup', e => {
+
+    key.classList.remove('active')
+
+  })
+  document.addEventListener('touchend', e => {
 
     key.classList.remove('active')
 

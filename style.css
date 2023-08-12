@@ -1,49 +1,65 @@
 button {
   position: relative;
-  top: 80px;
+  top: 68px;
   left: 32px;
-  min-width: 100px;
-  min-height: 50px;
-  font-size: 20px;
+  width: 10%;
+  height: 15%;
+  font-size: 15px;
   background-color: #c0c0c0;
   border-style: none;
+  border-radius: 5px;
 
 }
 
+@media only screen and (hover: none) and (pointer: coarse) {
+  body {
+    margin: -400px;
+    overflow: hidden;
+    transform-origin: right;
+    transform: translate(-100vw, 0) rotate(-90deg);
+
+  }
+}
+
 body {
-  background-color: #c3e7fb;
+  background-image: url("piano/1bg.jpg");
+  background-color: #2d2c2e;
   margin top: 100px;
   min-height: 100vh;
   display: block;
   align-items: center;
+
+
+
 }
 
 .piano {
 
   padding: 10px 0px;
   border-radius: 25px;
-  display: inline-flex;
+
   text-align: center;
   background: url(piano/pianocase.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  width: 100%;
+  --height: 20%;
+  height: var(--height);
 
-  box-sizing: var(--width)+60px;
-
+  --pad: height;
 }
 
 .padding {
   display: inline-flex;
-  padding-left: 3%;
-  padding-top: 8%;
-
-
+  margin-top: 140px;
+  width: 94%;
+  height: 35%;
 }
 
 
 
 .white {
-  --width: 60px;
+  --width: 7%;
   border-radius: 5px;
   height: calc(var(--width) * 4);
   width: var(--width);
@@ -66,16 +82,16 @@ body {
 }
 
 .black {
-  --width: 50px;
+  --width: 5.4%;
   border-radius: 5px;
-  height: calc(var(--width) * 3.2);
+  height: 70%;
   width: var(--width);
   background: url(piano/BlackKey.png);
   background-size: 100% 100%;
   margin-left: calc(var(--width) / -1.9);
   margin-right: calc(var(--width) / -1.2);
   z-index: 2;
-  font-size: 12px;
+  font-size: 95%;
   color: white;
   background-color: black;
 
