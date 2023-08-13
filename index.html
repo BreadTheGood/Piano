@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div>
+  <div class="container">
     <button class="B1">
 
       Aumentar
@@ -25,166 +25,144 @@
 
     </button>
 
-    <button onclick="document.location='#' " class="B1">
+    <!-- <button onclick="document.location='#' " class="B1">
 
       BR
 
-    </button>
+    </button> -->
 
 
-  </div>
 
-  <div class="piano">
-    <div class="padding">
-      <div data-note="F4" class="key white ini">
-        <br> <br> <br><br> <br> <br> <br> <br> <br>
-        <br><b> "<" </b><br>
-            <b> F4 </b>
-      </div>
-      <div data-note="Gb4" class="key black">
-        <br> <br> <br> <br> <br> <br> <b> A </b><br>
-        <b> Gb4 </b>
-      </div>
-      <div data-note="G4" class="key white">
-        <br><br><br><br><br><br><br><br><br><br><b> Z </b><br>
-        <b> G4 </b>
-      </div>
-      <div data-note="Ab4" class="key black">
-        <br> <br> <br> <br> <br> <br> <b> S </b><br>
-        <b> Ab4 </b>
-      </div>
-      <div data-note="A4" class="key white">
-        <br><br><br><br><br><br><br><br><br><br><b> X </b><br>
-        <b> A4 </b>
-      </div>
-      <div data-note="Bb4" class="key black">
-        <br> <br> <br> <br> <br> <br> <b> D </b><br>
-        <b> Bb4 </b>
-      </div>
-      <div data-note="B4" class="key white">
-        <br><br><br><br><br><br><br><br><br><br><b> C </b><br>
-        <b> B4 </b>
-      </div>
 
-      <div data-note="C5" class="key white ini">
-        <br><br><br><br><br><br><br><br><br><br><b> V </b><br>
-        <b> C5 </b>
-      </div>
-      <div data-note="Db5" class="key black">
-        <br> <br> <br> <br> <br> <br> <b> G </b><br>
-        <b> Db5 </b>
-      </div>
-      <div data-note="D5" class="key white">
-        <br><br><br><br><br><br><br><br><br><br><b> B </b><br>
-        <b> D5 </b>
-      </div>
-      <div data-note="Eb5" class="key black">
-        <br> <br> <br> <br> <br> <br> <b> H </b><br>
-        <b> Eb5 </b>
-      </div>
-      <div data-note="E5" class="key white">
-        <br><br><br><br><br><br><br><br><br><br><b> N </b><br>
-        <b> E5 </b>
-      </div>
-      <div data-note="F5" class="key white ini">
-        <br><br><br><br><br><br><br><br><br><br><b> M </b><br>
-        <b> F5 </b>
-      </div>
-      <div data-note="Gb5" class="key black">
-        <br> <br> <br> <br> <br> <br> <b> K </b><br>
-        <b> Gb5 </b></b>
-      </div>
-      <div data-note="G5" class="key white">
-        <br><br><br><br><br><br><br><br><br><br><b>","</b><br>
-        <b> G5 </b>
-      </div>
-      <div data-note="Ab5" class="key black">
-        <br> <br> <br> <br> <br> <br> <b> L </b><br>
-        <b> Ab5 </b>
-      </div>
-      <div data-note="A5" class="key white">
-        <br><br><br><br><br><br><br><br><br><br><b>"."</b><br>
-        <b> A5 </b>
-      </div>
-      <div data-note="Bb5" class="key black">
-        <br> <br> <br> <br> <br> <br> <b> Ñ </b><br>
-        <b> Bb5 </b>
-      </div>
-      <div data-note="B5" class="key white">
-        <br><br><br><br><br><br><br><br><br><br><b>"-"</b><br>
-        <b> B5 </b>
-      </div>
+    <div class="piano" id="piano">
+      <div class="padding">
+        <div data-note="F4" class="key white ini">
+          <b> "<" </b><br><b> F4 </b>
+        </div>
+        <div data-note="Gb4" class="key black">
+          <b> A </b><br><b> Gb4 </b>
+        </div>
+        <div data-note="G4" class="key white">
+          <b> Z </b><br><b> G4 </b>
+        </div>
+        <div data-note="Ab4" class="key black">
+          <b> S </b><br><b> Ab4 </b>
+        </div>
+        <div data-note="A4" class="key white">
+          <b> X </b><br><b> A4 </b>
+        </div>
+        <div data-note="Bb4" class="key black">
+          <b> D </b><br><b> Bb4 </b>
+        </div>
+        <div data-note="B4" class="key white">
+          <b> C </b><br><b> B4 </b>
+        </div>
 
-      <div data-note="C6" class="key white ini">
-        <br><br><br><br><br><br><br><br><br><br><b> Q </b><br>
-        <b> C6 </b>
-      </div>
-      <div data-note="Db6" class="key black">
-        <br> <br> <br> <br> <br> <br> <b> 2 </b><br>
-        <b> Db6 </b>
-      </div>
-      <div data-note="D6" class="key white">
-        <br><br><br><br><br><br><br><br><br><br><b> W </b><br>
-        <b> D6 </b>
-      </div>
-      <div data-note="Eb6" class="key black">
-        <br> <br> <br> <br> <br> <br> <b> 3 </b><br>
-        <b> Eb6 </b>
-      </div>
-      <div data-note="E6" class="key white">
-        <br><br><br><br><br><br><br><br><br><br><b> E </b><br>
-        <b> E6 </b>
-      </div>
-      <div data-note="F6" class="key white ini">
-        <<br><br><br><br><br><br><br><br><br><br><b> R </b><br>
-        <b> F6 </b>
-      </div>
-      <div data-note="Gb6" class="key black">
-        <br> <br> <br> <br> <br> <br> <b> 5 </b><br>
-        <b> Gb6 </b></b>
-      </div>
-      <div data-note="G6" class="key white">
-        <br><br><br><br><br><br><br><br><br><br><b> T </b><br>
-        <b> G6 </b>
-      </div>
-      <div data-note="Ab6" class="key black">
-        <br> <br> <br> <br> <br> <br> <b> 6 </b><br>
-        <b> Ab6 </b>
-      </div>
-      <div data-note="A6" class="key white">
-        <br><br><br><br><br><br><br><br><br><br><b> Y </b><br>
-        <b> A6 </b>
-      </div>
-      <div data-note="Bb6" class="key black">
-        <br> <br> <br> <br> <br> <br> <b> 7 </b><br>
-        <b> Bb6 </b>
-      </div>
-      <div data-note="B6" class="key white">
-        <br><br><br><br><br><br><br><br><br><br><b> U </b><br>
-        <b> B6 </b>
-      </div>
+        <div data-note="C5" class="key white ini">
+          <b> V </b><br><b> C5 </b>
+        </div>
+        <div data-note="Db5" class="key black">
+          <b> G </b><br><b> Db5 </b>
+        </div>
+        <div data-note="D5" class="key white">
+          <b> B </b><br><b> D5 </b>
+        </div>
+        <div data-note="Eb5" class="key black">
+          <b> H </b><br><b> Eb5 </b>
+        </div>
+        <div data-note="E5" class="key white">
+          <b> N </b><br><b> E5 </b>
+        </div>
+        <div data-note="F5" class="key white ini">
+          <b> M </b><br><b> F5 </b>
+        </div>
+        <div data-note="Gb5" class="key black">
+          <b> K </b><br><b> Gb5 </b></b>
+        </div>
+        <div data-note="G5" class="key white">
+          <b>","</b><br><b> G5 </b>
+        </div>
+        <div data-note="Ab5" class="key black">
+          <b> L </b><br><b> Ab5 </b>
+        </div>
+        <div data-note="A5" class="key white">
+          <b>"."</b><br><b> A5 </b>
+        </div>
+        <div data-note="Bb5" class="key black">
+          <b> Ñ </b><br><b> Bb5 </b>
+        </div>
+        <div data-note="B5" class="key white">
+          <b>"-"</b><br><b> B5 </b>
+        </div>
 
-      <div data-note="C7" class="key white ini">
-        <br><br><br><br><br><br><br><br><br><br><b> I </b><br>
-        <b> C7 </b>
-      </div>
-      <div data-note="Db7" class="key black">
-        <br> <br> <br> <br> <br> <br> <b> 9 </b><br>
-        <b> Db6 </b>
-      </div>
-      <div data-note="D7" class="key white">
-        <br><br><br><br><br><br><br><br><br><br><b> O </b><br>
-        <b> D7 </b>
-      </div>
-      <div data-note="Eb7" class="key black">
-        <br> <br> <br> <br> <br> <br> <b> 0 </b><br>
-        <b> Eb7 </b>
-      </div>
-      <div data-note="E7" class="key white">
-        <br><br><br><br><br><br><br><br><br><br><b> P </b><br>
-        <b> E7 </b>
+        <div data-note="C6" class="key white ini">
+          <b> Q </b><br><b> C6 </b>
+        </div>
+        <div data-note="Db6" class="key black">
+          <b> 2 </b><br><b> Db6 </b>
+        </div>
+        <div data-note="D6" class="key white">
+          <b> W </b><br><b> D6 </b>
+        </div>
+        <div data-note="Eb6" class="key black">
+          <b> 3 </b><br><b> Eb6 </b>
+        </div>
+        <div data-note="E6" class="key white">
+          <b> E </b><br><b> E6 </b>
+        </div>
+        <div data-note="F6" class="key white ini">
+          <b> R </b><br><b> F6 </b>
+        </div>
+        <div data-note="Gb6" class="key black">
+          <b> 5 </b><br><b> Gb6 </b>
+        </div>
+        <div data-note="G6" class="key white">
+          <b> T </b><br><b> G6 </b>
+        </div>
+        <div data-note="Ab6" class="key black">
+          <b> 6 </b><br><b> Ab6 </b>
+        </div>
+        <div data-note="A6" class="key white">
+          <b> Y </b><br><b> A6 </b>
+        </div>
+        <div data-note="Bb6" class="key black">
+          <b> 7 </b><br><b> Bb6 </b>
+        </div>
+        <div data-note="B6" class="key white">
+          <b> U </b><br><b> B6 </b>
+        </div>
+        <div data-note="C7" class="key white ini">
+          <b> I </b><br><b> C7 </b>
+        </div>
+        <div data-note="Db7" class="key black">
+          <b> 9 </b><br><b> Db6 </b>
+        </div>
+        <div data-note="D7" class="key white">
+          <b> O </b><br><b> D7 </b>
+        </div>
+        <div data-note="Eb7" class="key black">
+          <b> 0 </b><br><b> Eb7 </b>
+        </div>
+        <div data-note="E7" class="key white">
+          <b> P </b><br><b> E7 </b>
+        </div>
       </div>
     </div>
+  </div>
+
+  <div class=names>
+    <label for="Name">Keyboard Keys</label>
+    <label for="Name">Piano Notes</label>
+    <label for="Name">Custom Notes</label>
+  </div>
+  <div class="textbox">
+   
+    <textarea placeholder="Press any key. . ." readonly type="text" id="textKey" class="input" ></textarea>
+    
+    <textarea readonly type="text" id="textNote" class="input" placeholder="Press any key. . ."></textarea>
+    
+    <textarea type="text" id="textPlay" class="input" placeholder="Type your own notes. . ."></textarea>
+    
   </div>
 
 
